@@ -17,7 +17,7 @@ infoForm.addEventListener('submit', function(event) {
     studentData.freeHours = parseInt(document.getElementById('freeHours').value);
 
     // Personalize the welcome message
-    welcomeMessage.textContent = Welcome, ${studentData.name}! Let's do this.;
+    welcomeMessage.textContent = ' Welcome, ${studentData.name}! Let's do this.';
 
     // Generate the timetable for Step 2
     generateTimetable();
