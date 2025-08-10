@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Comeback Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1 id="welcomeMessage">Welcome, Academic Soldier!</h1>
+
+        <div id="step1" class="step">
+            <h2>Step 1: The Honest Assessment</h2>
+            <p>To win a war, you must first understand the battlefield. Let's get the facts straight.</p>
+            <form id="infoForm">
+                <input type="text" id="studentName" placeholder="What should we call you?" required>
+                <input type="number" id="currentSem" placeholder="Your Current Semester" required min="1" max="8">
+                <input type="number" id="arrearPapers" placeholder="Number of Arrear Papers" required min="1">
+                <input type="number" id="freeHours" placeholder="Free hours per day (after college, sleep, etc.)" required min="1">
+                <button type="submit" class="cta-button">Create My Plan</button>
+            </form>
+        </div>
+
+        <div id="step2" class="step hidden">
+            <h2>Step 2: Forge Your Battle Plan</h2>
+            <div id="timetableResult"></div>
+        </div>
+
+        <div id="step3" class="step hidden">
+            <h2>Step 3: Divide and Conquer</h2>
+            <p>You don't climb a mountain in one leap. You take it one step at a time. We'll use the <strong>Pomodoro Technique</strong>.</p>
+            <ul>
+                <li>Study for 25 minutes (no phone, no distractions).</li>
+                <li>Take a 5-minute break.</li>
+                <li>After 4 sessions, take a longer 15-30 minute break.</li>
+            </ul>
+            <p>This builds intense focus and prevents burnout.</p>
+        </div>
+
+        <div id="step4" class="step hidden">
+            <h2>Step 4: Find Your "Why"</h2>
+            <p>Motivation fades. Purpose endures. Write down the deep reason you are doing this. This is your fuel.</p>
+            <textarea id="motivationText" placeholder="I am doing this because..."></textarea>
+        </div>
+        
+        <div id="step5" class="step hidden">
+            <h2>Step 5: Build Your Alliance</h2>
+            <p>No soldier wins a war alone. Find a trusted friend or classmate to be your accountability partner. Share your goal with them. Check in with each other daily or weekly.</p>
+        </div>
+
+        <div id="step6" class="step hidden">
+            <h2>Step 6: Track Your Victories</h2>
+            <p>Confidence is built on proof. Every chapter you finish, every concept you master is a win. Track it. Celebrate it. This is your comeback story, write it one victory at a time.</p>
+            <h3>Congratulations, you have completed your plan. Now, the real work begins. You can do this.</h3>
+        </div>
+        
+        <div class="step-nav">
+            <button id="nextStepBtn" class="cta-button hidden">Next Step</button>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
