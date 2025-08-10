@@ -9,22 +9,20 @@ const nextStepBtn = document.getElementById('nextStepBtn');
 
 // Handle the initial form submission
 infoForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    // Collect data from the form
-    studentData.name = document.getElementById('studentName').value;
-    studentData.arrears = parseInt(document.getElementById('arrearPapers').value);
-    studentData.freeHours = parseInt(document.getElementById('freeHours').value);
-
-    // Personalize the welcome message
-    welcomeMessage.textContent = `Welcome, ${studentData.name}! Let's do this.`;
-
-    // Generate the timetable for Step 2
-    generateTimetable();
-
-    // Move to the next step
-    showStep(2);
-});
+event.preventDefault();
+// Collect data from the form
+studentData.name = document.getElementById('studentName').value;
+studentData.arrears =
+parseInt(document.getElementById('arrearPapers').value);
+studentData.freeHours =
+parseInt(document.getElementById('freeHours').value);
+// Personalize the welcome message
+welcomeMessage.textContent = `Welcome, ${studentData.name}! Let's
+do this.`;
+// Generate the timetable for Step 2
+generateTimetable();
+// Move to the next step
+showStep(2);
 
 // Handle the "Next Step" button
 nextStepBtn.addEventListener('click', function() {
