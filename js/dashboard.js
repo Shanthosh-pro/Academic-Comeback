@@ -40,7 +40,7 @@ function showStep(stepNumber) {
     });
 
     // Show the current step
-    const currentStepElement = document.getElementById(step${stepNumber});
+    const currentStepElement = document.getElementById(`step${stepNumber}`);
     if (currentStepElement) {
         currentStepElement.classList.remove('hidden');
         currentStep = stepNumber;
