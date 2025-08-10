@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Code</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Enter Your Access Code</h2>
+        <p>Enter the 6-digit code provided to you to begin.</p>
+        <form id="loginForm">
+            <input type="text" id="accessCode" maxlength="6" placeholder="_ _ _ _ _ _" required autocomplete="off">
+            <button type="submit" class="cta-button">Proceed</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
